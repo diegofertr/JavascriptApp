@@ -7,16 +7,16 @@ For init -> gulp & npm start.
 
 Tools.
 
-..*sass
-..*gulp
-..*babel
-..*browserify
-..*watchify => para automatizar el build de nuestro proyecto
-..*page.js => libreria para hacer spa con js puro
-..*yo-yo.js => usa la filosofia de react.js
-..*empty-element.js
-..*node.js
-..*express.js
+*sass
+*gulp
+*babel
+*browserify
+*watchify => para automatizar el build de nuestro proyecto
+*page.js => libreria para hacer spa con js puro
+*yo-yo.js => usa la filosofia de react.js
+*empty-element.js
+*node.js
+*express.js
 
 
 [My projects](https://www.github.com/diegofertr)
