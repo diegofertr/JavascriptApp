@@ -14,6 +14,8 @@ module.exports = function layout(content){
 						<i class="fa fa-user" aria-hidden="true"></i>
 					</a>
 					<ul id="drop-user" class="dropdown-content">
+						<li><a href="/signup">Signup</a></li>
+						<li><a href="/signin">Signin</a></li>
 						<li><a href="#">Salir</a></li>
 					</ul>
 				</div>
