@@ -6,6 +6,7 @@ For init -> gulp & npm start.
 
 
 Tools.
+
 ..*sass
 ..*gulp
 ..*babel
@@ -17,4 +18,5 @@ Tools.
 ..*node.js
 ..*express.js
 
-[I'm an inline-style link](https://www.google.com)
+
+[My projects](https://www.github.com/diegofertr)
