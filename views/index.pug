@@ -2,6 +2,7 @@ html
   head
     link(rel="stylesheet" href='https://fonts.googleapis.com/css?family=Montserrat|Oleo+Script')
     link(rel="stylesheet" href='https://fonts.googleapis.com/icon?family=Material+Icons')
+    link(rel="stylesheet" href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
     link(rel="stylesheet" href='app.css')
     link(rel='apple-touch-icon', sizes='57x57', href='/apple-icon-57x57.png')
     link(rel='apple-touch-icon', sizes='60x60', href='/apple-icon-60x60.png')
@@ -20,9 +21,9 @@ html
     meta(name='msapplication-TileColor', content='#ffffff')
     meta(name='msapplication-TileImage', content='/ms-icon-144x144.png')
     meta(name='theme-color', content='#ffffff')
-    meta(name="viewport" content="width=device-width, inital-scale=1.0, user-scalable=no")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no")
     meta(charset='utf-8')
-    title Platzigram
+    title=title
   body
     section#main-container
     footer.site-footer
@@ -37,5 +38,9 @@ html
                 a(href='#!') Inglés
           .col.s12.l3.push-l6.center-align
             | © 2016 Platzigram
-    script(type='text/javascript', src='node_modules/jquery/dist/jquery.min.js')
-    script(src='node_modules/materialize-css/dist//js/materialize.min.js')
+
+    //- script(type='text/javascript', src='node_modules/jquery/dist/jquery.min.js')
+    script(type='text/javascript', src='https://code.jquery.com/jquery-2.1.1.min.js')
+    //- script(src='node_modules/materialize-css/dist/js/materialize.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js')
+    script(type='application/javascript' src='app.js')
