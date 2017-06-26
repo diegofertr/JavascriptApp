@@ -5,7 +5,7 @@ App with full javascript in the client side and the server side
 For init -> gulp & npm start.
 
 
-Tools
+Tools.
 ..*sass
 ..*gulp
 ..*babel
@@ -16,3 +16,5 @@ Tools
 ..*empty-element.js
 ..*node.js
 ..*express.js
+
+[I'm an inline-style link](https://www.google.com)
