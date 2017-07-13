@@ -18,7 +18,7 @@ app.get('/signin', function(req, res) {
 	res.render('index', { title: 'Platzigram - Signin' });
 });
 
-app.listen(3000, function (err) {
+app.listen(3001, function (err) {
 	if (err) return console.log('Hubo un error'), process.exit(1);
-	console.log('Servidor Platzigram escuchando en el puerto 3000');
+	console.log('Servidor Platzigram escuchando en el puerto 3001');
 });

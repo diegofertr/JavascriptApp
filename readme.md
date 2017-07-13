@@ -17,6 +17,7 @@ Tools.
 * empty-element.js
 * node.js
 * express.js
+* format.js
 
 
 [My projects](https://www.github.com/diegofertr)
