@@ -18,6 +18,6 @@ Tools.
 * node.js
 * express.js
 * format.js
-
+* superagent => Peticiones tipo ajax, más ordenados
 
 [My projects](https://www.github.com/diegofertr)
