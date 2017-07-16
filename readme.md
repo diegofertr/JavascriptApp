@@ -15,9 +15,9 @@ Tools.
 * page.js => libreria para hacer spa con js puro
 * yo-yo.js => usa la filosofia de react.js
 * empty-element.js
-* node.js
-* express.js
-* format.js
-* superagent => Peticiones tipo ajax, más ordenados
+* node.js => backend javascript
+* express.js => framework basado en node
+* format.js => Libreria js para internacionalizacion de textos y fechas
+* axios => Modulo que permite hacer requests tipo http basados en promesas(promises)
 
 [My projects](https://www.github.com/diegofertr)
