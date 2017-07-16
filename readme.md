@@ -18,6 +18,9 @@ Tools.
 * node.js => backend javascript
 * express.js => framework basado en node
 * format.js => Libreria js para internacionalizacion de textos y fechas
+* superagent => Libreria js para hacer request basados en callbacks
 * axios => Modulo que permite hacer requests tipo http basados en promesas(promises)
+* multer => Libreria para poder hacer uploads de archivos
+
 
 [My projects](https://www.github.com/diegofertr)
