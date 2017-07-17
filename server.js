@@ -66,10 +66,7 @@ app.get('/api/pictures', function(req, res){
 		},
 	];
 
-	//wait two seconds to send pictures
-	setTimeout(function(){
-		res.send(pictures);
-	}, 2000);
+	res.send(pictures);
 
 });
 
@@ -82,6 +79,52 @@ app.post('/api/pictures', function(req, res) {
 	})
 });
 
+app.get('/api/user/:username', function(req, res) {
+	var user = {
+		username: 'Diego Fernando Ticona Ramos',
+		avatar: 'https://pbs.twimg.com/profile_images/803011643147948033/oaef36zc_400x400.jpg',
+		pictures: [
+			{
+				id: 1,
+				src: 'https://pbs.twimg.com/media/DE5XYT6V0AAXV_P.jpg:large',
+				likes: 3,
+			},
+			{
+				id: 2,
+				src: 'https://pbs.twimg.com/media/DE30R5fWAAMxIy9.jpg',
+				likes: 10,
+			},
+			{
+				id: 3,
+				src: 'https://pbs.twimg.com/media/DE35WfIXsAEr4v6.jpg',
+				likes: 24,
+			},
+			{
+				id: 4,
+				src: 'https://pbs.twimg.com/media/DE31lA6XgAEF9fG.jpg',
+				likes: 0,
+			},
+			{
+				id: 5,
+				src: 'https://pbs.twimg.com/media/DE3z2WqXkAA1d7a.jpg',
+				likes: 1,
+			},
+			{
+				id: 6,
+				src: 'https://pbs.twimg.com/media/DE3uGTSUAAArm0H.jpg',
+				likes: 99,
+			}
+		]
+	};
+	
+	res.send(user);
+});
+
+app.get('/:username', function(req, res) {
+	res.render('index', { title: `Platzigram - ${req.params.username}`})
+});
+
+// End routes api
 app.listen(3001, function (err) {
 	if (err) return console.log('Hubo un error'), process.exit(1);
 	console.log('Servidor Platzigram escuchando en el puerto 3001');

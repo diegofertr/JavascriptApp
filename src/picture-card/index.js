@@ -13,7 +13,7 @@ module.exports = function pictureCard(pic) {
     <div class="card-content">
       <small class="right time">${translate.date.format(picture.createdAt)}</small>
 
-      <a href="#" class="card-title">
+      <a href="/${picture.user.username}" class="card-title">
         <img src="${picture.user.avatar}" class="avatar" />
         <span class="username">${picture.user.username}</span>
       </a>
