@@ -81,7 +81,7 @@ app.post('/api/pictures', function(req, res) {
 
 app.get('/api/user/:username', function(req, res) {
 	var user = {
-		username: 'Diego Fernando Ticona Ramos',
+		username: 'Diego F. Ticona Ramos',
 		avatar: 'https://pbs.twimg.com/profile_images/803011643147948033/oaef36zc_400x400.jpg',
 		pictures: [
 			{

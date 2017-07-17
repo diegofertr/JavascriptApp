@@ -8,12 +8,12 @@ var translate = require('../translate');
 module.exports = function userPageTemplate(user) {
 	var el = yo`<div class="container user-page">
 	<div class="row">
-		<div class="col s12 m12 offset-m1 l12 center-align heading">
+		<div class="col s12 m10 offset-m1 l12 center-align heading">
 			<div class="row">
 				<div class="col s12 m10 offset-m1 l3 offest-l3 center">
 					<img src="${user.avatar}" class="responsive-img circle" />
 				</div>
-				<div class="col s12 m10 offset-m1 l6 center">
+				<div class="col s12 m10 offset-m1 l9 center">
 					<h2 class="hide-on-large-only center-align">${user.username}</h2>
 					<h2 class="hide-on-med-and-down left-align">${user.username}</h2>
 				</div>
