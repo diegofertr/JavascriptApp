@@ -66,7 +66,8 @@ app.get('/api/pictures', function(req, res){
 		},
 	];
 
-	res.send(pictures);
+	// res.send(pictures);
+	setTimeout(() => res.send(pictures), 2000);
 
 });
 
@@ -82,7 +83,7 @@ app.post('/api/pictures', function(req, res) {
 app.get('/api/user/:username', function(req, res) {
 	var user = {
 		username: 'Diego F. Ticona Ramos',
-		avatar: 'https://pbs.twimg.com/profile_images/803011643147948033/oaef36zc_400x400.jpg',
+		avatar: 'https://pbs.twimg.com/profile_images/886763709103820801/OxPbNNMj_400x400.jpg',
 		pictures: [
 			{
 				id: 1,

@@ -7,24 +7,20 @@ var header = require('../header');
 var axios = require('axios');
 
 //ruta home
-page('/', header, loadPicturesAxios, function(ctx, next) {
+page('/', header, loading, loadPicturesAxios, function(ctx, next) {
 	title('Platzigram');
 	var main = document.getElementById('main-container');
 	
 	empty(main).appendChild(template(ctx.pictures));
 })
 
-//loading pictures from server with superagent library
-// function loadPictures(ctx, next) {
-// 	request
-// 		.get('/api/pictures')
-// 		.end(function (err, res) {
-// 			if (err) return console.log(err);
-// 			console.log(res.body);
-// 			ctx.pictures = res.body;
-// 			next();
-// 		})
-// }
+//function for make the loader 
+function loading(ctx, next) {
+	var el = document.createElement('div');
+	el.classList.add('loader');
+	document.getElementById('main-container').appendChild(el);
+	next();
+}
 
 //loading pictures from server with axios library & promises
 function loadPicturesAxios(ctx, next) {
