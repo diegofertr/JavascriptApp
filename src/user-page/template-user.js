@@ -19,20 +19,20 @@ module.exports = function userPageTemplate(user) {
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="row">
-				${user.pictures.map(function (picture) {
-					return yo`
-					<div class="col s6 m12 l4">
-					<div class="picture-container">
-					<img src="${picture.src}" class="picture" />
-					<div class="likes">
-					<i class="fa fa-heart"></i> ${picture.likes}
-					</div>
-					</div>
-					</div>
-					`
-				})}
+		<div class="row">
+					${user.pictures.map(function (picture) {
+						return yo`
+						<div class="col s6 m12 l4">
+						<div class="picture-container">
+						<img src="${picture.src}" class="picture" />
+						<div class="likes">
+						<i class="fa fa-heart"></i> ${picture.likes}
+						</div>
+						</div>
+						</div>
+						`
+					})}
+		</div>
 	</div>
 </div>`
 
