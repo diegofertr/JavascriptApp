@@ -37,7 +37,7 @@ app.get('/api/pictures', function(req, res){
 		{
 			user: {
 				username: 'diego',
-				avatar: 'diego.jpg'
+				avatar: 'https://pbs.twimg.com/profile_images/886763709103820801/OxPbNNMj_400x400.jpg'
 			},
 			url: 'office.jpg',
 			likes: 0,
@@ -47,7 +47,7 @@ app.get('/api/pictures', function(req, res){
 		{
 			user: {
 				username: 'fernando',
-				avatar: 'diego.jpg'
+				avatar: 'https://pbs.twimg.com/profile_images/886763709103820801/OxPbNNMj_400x400.jpg'
 			},
 			url: 'office.jpg',
 			likes: 10,
@@ -57,7 +57,7 @@ app.get('/api/pictures', function(req, res){
 		{
 			user: {
 				username: 'cristiano',
-				avatar: 'diego.jpg'
+				avatar: 'https://pbs.twimg.com/profile_images/886763709103820801/OxPbNNMj_400x400.jpg'
 			},
 			url: 'office.jpg',
 			likes: 1,
