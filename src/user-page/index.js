@@ -11,11 +11,23 @@ var template = require('./template-user');
 var axios = require('axios');
 var request = require('superagent');
 
-page('/:username', header, loadUser, function (ctx, next) {
+page('/:username', loadUser, header, function (ctx, next) {
 	var main = document.getElementById('main-container');
-	title(`Platzigram - ${ctx.params.username}`);
+	title(`Platzigram - ${ctx.user.username}`);
 	empty(main).appendChild(template(ctx.user));
-})
+});
+
+page('/:username/:id', loadUser, header, function (ctx, next) {
+	var main = document.getElementById('main-container');
+	title(`Platzigram - ${ctx.user.username}`);
+	empty(main).appendChild(template(ctx.user));
+	$(`#modal${ctx.params.id}`).modal('open', {
+		complete: function () {
+			outDuration: 300,
+			page(`/${ctx.params.username}`)
+		}
+	});
+});
 
 function loadUser(ctx, next) {
 	axios

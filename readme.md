@@ -5,7 +5,7 @@ App with full javascript in the client side and the server side
 For init -> gulp & npm start.
 
 
-Tools.
+Tools Frontend.
 
 * sass
 * gulp
@@ -15,12 +15,15 @@ Tools.
 * page.js => libreria para hacer spa con js puro
 * yo-yo.js => usa la filosofia de react.js
 * empty-element.js
-* node.js => backend javascript
-* express.js => framework basado en node
 * format.js => Libreria js para internacionalizacion de textos y fechas
 * superagent => Libreria js para hacer request basados en callbacks
 * axios => Modulo que permite hacer requests tipo http basados en promesas(promises)
 * multer => Libreria para poder hacer uploads de archivos
 
+
+Tools Backend.
+
+* node.js => backend javascript
+* express.js => framework basado en node
 
 [My projects](https://www.github.com/diegofertr)

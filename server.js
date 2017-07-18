@@ -82,7 +82,7 @@ app.post('/api/pictures', function(req, res) {
 
 app.get('/api/user/:username', function(req, res) {
 	var user = {
-		username: 'Diego F. Ticona Ramos',
+		username: 'diego',
 		avatar: 'https://pbs.twimg.com/profile_images/886763709103820801/OxPbNNMj_400x400.jpg',
 		pictures: [
 			{
@@ -122,6 +122,10 @@ app.get('/api/user/:username', function(req, res) {
 });
 
 app.get('/:username', function(req, res) {
+	res.render('index', { title: `Platzigram - ${req.params.username}`})
+});
+
+app.get('/:username/:id', function(req, res) {
 	res.render('index', { title: `Platzigram - ${req.params.username}`})
 });
 
