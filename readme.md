@@ -19,7 +19,7 @@ Tools Frontend.
 * superagent => Libreria js para hacer request basados en callbacks
 * axios => Modulo que permite hacer requests tipo http basados en promesas(promises)
 * multer => Libreria para poder hacer uploads de archivos
-
+* webcamjs => Libreria para acceder a la camara desde el navegador
 
 Tools Backend.
 

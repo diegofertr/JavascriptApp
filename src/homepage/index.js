@@ -5,6 +5,7 @@ var title = require('title');
 // var request = require('superagent');
 var header = require('../header');
 var axios = require('axios');
+var webcam = require('webcamjs');
 
 //ruta home
 page('/', header, loading, loadPicturesAxios, function(ctx, next) {
@@ -12,6 +13,15 @@ page('/', header, loading, loadPicturesAxios, function(ctx, next) {
 	var main = document.getElementById('main-container');
 	
 	empty(main).appendChild(template(ctx.pictures));
+
+	$(`#modalCamara`).modal({
+		ready: function () {
+			Webcam.attach('#camara-input');
+		},
+		complete: function () {
+			Webcam.reset();
+		}
+	});
 })
 
 //function for make the loader 
